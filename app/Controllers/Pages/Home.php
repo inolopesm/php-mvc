@@ -14,11 +14,9 @@ class Home extends Page {
     $organization = new Organization();
 
     $content = View::render("pages/home", [
-      "name" => $organization->name,
-      "description" => $organization->description,
-      "site" => $organization->site
+      "name" => $organization->name
     ]);
 
-    return parent::getPage("WDEV - Canal - HOME", $content);
+    return parent::getPage("HOME > WDEV", $content);
   }
 }
